@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blue Luci</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500&family=DM+Serif+Display&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --cream: #FAF7F2;
+      --blue-deep: #1A3A8F;
+      --blue-mid: #2E5FD9;
+      --blue-light: #A8C4F5;
+    }
+
+    html, body {
+      height: 100%;
+    }
+
+    body {
+      background-color: var(--cream);
+      font-family: 'DM Sans', sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 2rem;
+    }
+
+    .container {
+      text-align: center;
+      max-width: 480px;
+      opacity: 0;
+      transform: translateY(18px);
+      animation: rise 0.9s cubic-bezier(0.22, 1, 0.36, 1) 0.2s forwards;
+    }
+
+    @keyframes rise {
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .logo {
+      width: 160px;
+      height: auto;
+      margin-bottom: 2rem;
+      animation: rise 0.9s cubic-bezier(0.22, 1, 0.36, 1) 0.05s forwards;
+      opacity: 0;
+    }
+
+    .tagline {
+      font-family: 'DM Serif Display', serif;
+      font-size: clamp(1.4rem, 4vw, 1.8rem);
+      color: var(--blue-deep);
+      line-height: 1.35;
+      letter-spacing: -0.01em;
+      margin-bottom: 1.25rem;
+    }
+
+    .sub {
+      font-size: 0.95rem;
+      font-weight: 300;
+      color: var(--blue-mid);
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+
+    .dot {
+      display: inline-block;
+      width: 5px;
+      height: 5px;
+      background: var(--blue-light);
+      border-radius: 50%;
+      margin: 2.5rem auto 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img class="logo" src="logo.png" alt="Blue Luci">
+    <p class="tagline">Small apps for the Apple ecosystem.<br>Made because we wanted them.</p>
+    <p class="sub">First app launching soon</p>
+    <div class="dot"></div>
+  </div>
+</body>
+</html>
