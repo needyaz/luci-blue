@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy — Muninn</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500&family=DM+Serif+Display&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --cream: #FAF7F2;
+      --blue-deep: #1A3A8F;
+      --blue-mid: #2E5FD9;
+      --blue-light: #A8C4F5;
+      --text: #2a2a2a;
+      --muted: #666;
+    }
+
+    body {
+      background-color: var(--cream);
+      font-family: 'DM Sans', sans-serif;
+      color: var(--text);
+      line-height: 1.7;
+      padding: 3rem 1.5rem;
+    }
+
+    .container {
+      max-width: 640px;
+      margin: 0 auto;
+    }
+
+    .back {
+      display: inline-block;
+      font-size: 0.85rem;
+      color: var(--blue-mid);
+      text-decoration: none;
+      margin-bottom: 2.5rem;
+      letter-spacing: 0.02em;
+    }
+    .back:hover { text-decoration: underline; }
+
+    h1 {
+      font-family: 'DM Serif Display', serif;
+      font-size: clamp(1.6rem, 4vw, 2.2rem);
+      color: var(--blue-deep);
+      margin-bottom: 0.4rem;
+      line-height: 1.2;
+    }
+
+    .meta {
+      font-size: 0.85rem;
+      color: var(--muted);
+      margin-bottom: 2.5rem;
+    }
+
+    h2 {
+      font-size: 1rem;
+      font-weight: 500;
+      color: var(--blue-deep);
+      margin-top: 2rem;
+      margin-bottom: 0.5rem;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+    }
+
+    h3 {
+      font-size: 0.95rem;
+      font-weight: 500;
+      margin-top: 1.25rem;
+      margin-bottom: 0.4rem;
+    }
+
+    p { margin-bottom: 0.75rem; }
+
+    ul {
+      padding-left: 1.25rem;
+      margin-bottom: 0.75rem;
+    }
+
+    li { margin-bottom: 0.35rem; }
+
+    code {
+      font-size: 0.85em;
+      background: rgba(46, 95, 217, 0.08);
+      padding: 0.1em 0.35em;
+      border-radius: 3px;
+    }
+
+    hr {
+      border: none;
+      border-top: 1px solid var(--blue-light);
+      margin: 2rem 0;
+      opacity: 0.4;
+    }
+
+    .dot {
+      display: inline-block;
+      width: 5px;
+      height: 5px;
+      background: var(--blue-light);
+      border-radius: 50%;
+      margin-top: 2.5rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <a class="back" href="https://luci.blue">← luci.blue</a>
+
+    <h1>Privacy Policy</h1>
+    <p class="meta">Muninn &nbsp;·&nbsp; Last updated: February 27, 2026</p>
+
+    <p>Muninn is a macOS clipboard manager. This policy explains what data the app accesses and how it is used.</p>
+
+    <hr>
+
+    <h2>What Muninn Does</h2>
+    <p>Muninn monitors your clipboard and saves a local history of everything you copy — text, images, PDFs, file references, and colors. It lets you search, re-paste, and organize that history, and save frequently used items as named snippets. All of this happens entirely on your Mac.</p>
+
+    <hr>
+
+    <h2>Data We Collect</h2>
+    <p><strong>We collect no data.</strong> Muninn does not transmit any information to us or to any third party.</p>
+
+    <h3>What stays on your device</h3>
+    <ul>
+      <li><strong>Clipboard history</strong> — everything you copy is stored locally in <code>~/Library/Application Support/Muninn/</code>. It never leaves your device.</li>
+      <li><strong>Snippets</strong> — saved clips are stored locally in the same directory.</li>
+      <li><strong>Settings and preferences</strong> — stored in UserDefaults on your device only.</li>
+      <li><strong>Binary data (images, PDFs, rich text)</strong> — stored as local files in <code>~/Library/Application Support/Muninn/blobs/</code>.</li>
+    </ul>
+
+    <h3>Clipboard access</h3>
+    <p>Muninn reads from the system clipboard (<code>NSPasteboard</code>) to capture items as you copy them. It writes to the clipboard only when you explicitly select an item to paste.</p>
+
+    <h3>App usage information</h3>
+    <p>Muninn records which app was frontmost when each item was copied. This information is stored locally and used only to display source app icons in the history list.</p>
+
+    <hr>
+
+    <h2>No Network Access</h2>
+    <p>Muninn makes no network requests of any kind. It has no analytics, no crash reporting, no telemetry, and no cloud sync. There is no account system.</p>
+
+    <hr>
+
+    <h2>Export / Import</h2>
+    <p>Muninn can export your data to a local <code>.muninn</code> file and import from one. This is a manual, user-initiated operation. Exported files are stored wherever you choose on your device. We have no access to them.</p>
+
+    <hr>
+
+    <h2>OCR and Barcode Detection</h2>
+    <p>If enabled, Muninn uses Apple's Vision framework to extract text from images and detect barcodes. All processing happens on-device using system APIs. No image data is sent anywhere.</p>
+
+    <hr>
+
+    <h2>Children's Privacy</h2>
+    <p>Muninn does not knowingly collect any information from anyone, including children.</p>
+
+    <hr>
+
+    <h2>Changes</h2>
+    <p>If this policy changes, the updated version will be posted at this URL with a new "Last updated" date.</p>
+
+    <hr>
+
+    <h2>Contact</h2>
+    <p>Questions about this policy? Open an issue at <a href="https://github.com/needyaz/privacy-policies" style="color: var(--blue-mid);">github.com/needyaz/privacy-policies</a>.</p>
+
+    <div class="dot"></div>
+  </div>
+</body>
+</html>
