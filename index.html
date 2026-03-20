@@ -75,6 +75,64 @@
       border-radius: 50%;
       margin: 2.5rem auto 0;
     }
+
+    .apps {
+      margin-top: 2.5rem;
+      text-align: left;
+    }
+
+    .app-card {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      padding: 1rem 1.25rem;
+      border-radius: 14px;
+      border: 1px solid var(--blue-light);
+      text-decoration: none;
+      transition: background 0.15s, border-color 0.15s;
+    }
+
+    .app-card:hover {
+      background: rgba(46, 95, 217, 0.06);
+      border-color: var(--blue-mid);
+    }
+
+    .app-icon {
+      width: 52px;
+      height: 52px;
+      border-radius: 12px;
+      flex-shrink: 0;
+    }
+
+    .app-info {
+      display: flex;
+      flex-direction: column;
+      gap: 0.2rem;
+      flex: 1;
+    }
+
+    .app-name {
+      font-weight: 500;
+      color: var(--blue-deep);
+      font-size: 1rem;
+    }
+
+    .app-tagline {
+      font-size: 0.85rem;
+      color: var(--blue-mid);
+      font-weight: 300;
+    }
+
+    .app-arrow {
+      color: var(--blue-light);
+      font-size: 1.1rem;
+      transition: transform 0.15s;
+    }
+
+    .app-card:hover .app-arrow {
+      transform: translateX(3px);
+      color: var(--blue-mid);
+    }
   </style>
   <script data-goatcounter="https://blueluci.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 </head>
@@ -82,7 +140,17 @@
   <div class="container">
     <img class="logo" src="logo.png" alt="Blue Luci">
     <p class="tagline">Small apps for the Apple ecosystem.<br>Made because we wanted them.</p>
-    <p class="sub">First app launching soon</p>
+    <div class="apps">
+      <a class="app-card" href="/muninn.html">
+        <img class="app-icon" src="muninn-icon.png" alt="Muninn">
+        <div class="app-info">
+          <span class="app-name">Muninn</span>
+          <span class="app-tagline">Your second memory. Clipboard history &amp; snippets for Mac. Free, because I built it for myself anyway.</span>
+        </div>
+        <span class="app-arrow">→</span>
+      </a>
+    </div>
+
     <div class="dot"></div>
   </div>
 </body>

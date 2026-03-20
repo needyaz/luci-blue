@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Muninn — Your second memory</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500&family=DM+Serif+Display&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --cream: #FAF7F2;
+      --blue-deep: #1A3A8F;
+      --blue-mid: #2E5FD9;
+      --blue-light: #A8C4F5;
+      --text: #2a2a2a;
+      --muted: #666;
+    }
+
+    body {
+      background-color: var(--cream);
+      font-family: 'DM Sans', sans-serif;
+      color: var(--text);
+      line-height: 1.7;
+      padding: 3rem 1.5rem;
+    }
+
+    .container {
+      max-width: 640px;
+      margin: 0 auto;
+    }
+
+    .back {
+      display: inline-block;
+      font-size: 0.85rem;
+      color: var(--blue-mid);
+      text-decoration: none;
+      margin-bottom: 2.5rem;
+      letter-spacing: 0.02em;
+    }
+    .back:hover { text-decoration: underline; }
+
+    .hero {
+      display: flex;
+      align-items: center;
+      gap: 1.25rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .app-icon {
+      width: 80px;
+      height: 80px;
+      border-radius: 18px;
+      flex-shrink: 0;
+    }
+
+    .hero-text h1 {
+      font-family: 'DM Serif Display', serif;
+      font-size: clamp(1.8rem, 5vw, 2.4rem);
+      color: var(--blue-deep);
+      line-height: 1.15;
+    }
+
+    .hero-text .tagline {
+      font-size: 1rem;
+      color: var(--muted);
+      font-weight: 300;
+      margin-top: 0.25rem;
+    }
+
+    .app-store-btn {
+      display: inline-block;
+      margin: 1.75rem 0 2.5rem;
+      background: var(--blue-deep);
+      color: white;
+      text-decoration: none;
+      padding: 0.65rem 1.5rem;
+      border-radius: 10px;
+      font-size: 0.9rem;
+      font-weight: 500;
+      letter-spacing: 0.01em;
+      transition: background 0.15s;
+    }
+    .app-store-btn:hover { background: var(--blue-mid); }
+
+    hr {
+      border: none;
+      border-top: 1px solid var(--blue-light);
+      margin: 2rem 0;
+      opacity: 0.4;
+    }
+
+    h2 {
+      font-size: 0.8rem;
+      font-weight: 500;
+      color: var(--blue-deep);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-top: 1.75rem;
+      margin-bottom: 0.5rem;
+    }
+
+    p { margin-bottom: 0.75rem; font-size: 0.95rem; }
+
+    .dot {
+      display: inline-block;
+      width: 5px;
+      height: 5px;
+      background: var(--blue-light);
+      border-radius: 50%;
+      margin-top: 2.5rem;
+    }
+  </style>
+  <script data-goatcounter="https://blueluci.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</head>
+<body>
+  <div class="container">
+    <a class="back" href="/">← luci.blue</a>
+
+    <div class="hero">
+      <img class="app-icon" src="muninn-icon.png" alt="Muninn">
+      <div class="hero-text">
+        <h1>Muninn</h1>
+        <p class="tagline">Your second memory.</p>
+      </div>
+    </div>
+
+    <a class="app-store-btn" href="https://apps.apple.com/us/app/muninn/id6759760573?mt=12">Download on the Mac App Store</a>
+
+    <hr>
+
+    <p>Muninn remembers everything you copy.</p>
+    <p>Every piece of text, image, color, file, or PDF that passes through your clipboard is instantly captured and searchable — right from your menu bar.</p>
+
+    <h2>Clipboard History</h2>
+    <p>Never lose something you copied. Muninn keeps a full, searchable history organized by content type and source app. See exactly which app each item came from, and filter by it instantly.</p>
+
+    <h2>Saved Snippets</h2>
+    <p>Keep your most-used text — email signatures, code blocks, addresses, boilerplate — one click away. Name them, reorder them, and access them from a floating Snippet Picker panel with Cmd+1–9 quick select.</p>
+
+    <h2>Smart Search</h2>
+    <p>Search your entire history by text, hex color value, or content type. OCR makes text inside images searchable. PDF text extraction makes documents searchable. QR and barcode detection makes codes searchable.</p>
+
+    <h2>Screenshots, Automatically</h2>
+    <p>Every screenshot you take is instantly captured and ready to drag into any app. No extra steps.</p>
+
+    <h2>Paste Your Way</h2>
+    <p>Paste as rich text or strip formatting with plain-text paste. Apply text transforms — uppercase, lowercase, capitalize, trim whitespace — before pasting. Multi-select history items for bulk copy or delete.</p>
+
+    <h2>Privacy Built In</h2>
+    <p>Muninn detects sensitive clipboard content from password managers and can skip it entirely, mask it, or record it normally — your choice. Exclude specific apps or content types from being captured at all. All data stays on your Mac. Nothing is ever sent anywhere.</p>
+
+    <h2>Keyboard First</h2>
+    <p>Full keyboard navigation throughout. Global hotkey to open from anywhere. Drag items directly out of the popover into any app.</p>
+
+    <h2>Your Data, Your Control</h2>
+    <p>Export your entire history, snippets, and settings to a single backup file. Import and merge or replace. Nothing is ever sent anywhere — all data stays on your Mac.</p>
+
+    <h2>Siri Shortcuts</h2>
+    <p>Automate Muninn with App Intents. Search history, copy snippets, and transform text from Shortcuts or Siri.</p>
+
+    <hr>
+
+    <p style="font-size: 0.85rem; color: var(--muted);">Requires macOS 14.0 or later. Free on the Mac App Store. <a href="/privacy/muninn.html" style="color: var(--blue-mid);">Privacy policy</a>.</p>
+
+    <div class="dot"></div>
+  </div>
+</body>
+</html>
